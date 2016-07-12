@@ -1,8 +1,12 @@
 <?php
-if (!defined ('TYPO3_MODE')) {
-	die ('Access denied.');
+/**
+ * Pages table: add custom fields
+ *
+ * @link https://docs.typo3.org/typo3cms/TCAReference/
+ */
+if (!defined('TYPO3_MODE')) {
+    die('Access denied.');
 }
-
 $tempColumns = array(
 	'tx_robots_flags' => array(
 		'exclude' => true,
@@ -19,8 +23,10 @@ $tempColumns = array(
 );
 
 
-t3lib_div::loadTCA('pages');
-t3lib_extMgm::addTCAcolumns('pages', $tempColumns, 1);
-t3lib_extMgm::addToAllTCAtypes('pages','tx_robots_flags;;;;1-1-1', '1,2', 'before:TSconfig');
-
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+    'pages', $tempColumns, 1
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'pages', 'tx_robots_flags;;;;1-1-1', '1,2', 'before:TSconfig'
+);
 ?>
