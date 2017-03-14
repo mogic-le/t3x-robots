@@ -81,11 +81,15 @@ Just like TYPO3 CMS, this extension is licensed under GPL v2.
 
 Contact
 =======
-E-Mail: dmitry.dulepov@gmail.com
+E-Mail: weiske+t3x-robots@mogic.com
+
+Originally written by `Dmitry Dulepov`__.
+
+__ http://www.dmitry-dulepov.com/
 
 
 Links
 =====
 - `TYPO3 extension repository page <https://typo3.org/extensions/repository/view/robots>`_
 - `TYPO3 extension manual page <https://docs.typo3.org/typo3cms/extensions/robots/>`_
-- `Source code <https://github.com/dmitryd/typo3-robots>`_
+- `Source code <https://github.com/mogic-le/t3x-robots>`_
