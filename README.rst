@@ -1,15 +1,22 @@
 ========================
 TYPO3 "robots" extension
 ========================
+
+.. ATTENTION::
+   TYPO3 v9 has a `native "seo" extension`__ that provides this extension's features.
+
+__ https://docs.typo3.org/c/typo3/cms-seo/9.5/en-us/Introduction/Index.html
+
+----
+
 This is an extension to the TYPO3 CMS.
 It adds options to the page that generate a ``<meta name="robots"/>`` tag.
 
 This allows editors to easily exclude pages from indexing by Google, Bing
 and other search engines.
 
-.. toctree::
-   :maxdepth: 3
-   :titlesonly:
+.. contents::
+   :depth: 3
 
 
 .. _introduction:
